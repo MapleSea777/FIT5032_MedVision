@@ -1,0 +1,83 @@
+﻿@model AssignmentPorfolio_MedVision.Models.Registration
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Booking</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CT.Brain)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CT.Brain)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CT.Chest)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CT.Chest)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CT.Waist)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CT.Waist)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CT.Leg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CT.Leg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rating.Comments)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rating.Comments)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookingDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookingDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberOfCTMachines)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumberOfCTMachines)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaymentAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaymentAmount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BookingId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

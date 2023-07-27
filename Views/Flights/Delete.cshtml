@@ -1,0 +1,129 @@
+﻿@model AssignmentPorfolio_MedVision.Models.CT
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Flight</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AvailableMachines)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AvailableMachines)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Departure_Loc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Departure_Loc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Arrival_Loc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Arrival_Loc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.From_Latitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.From_Latitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.From_Longitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.From_Longitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.To_Latitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.To_Latitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.To_Longitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.To_Longitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FairPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FairPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FlightNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FlightNo)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
